@@ -21,6 +21,7 @@ public class Episodio {
     @ManyToOne
     private Serie serie;
 
+    public Episodio(){} // construtor padrão
     public Episodio(Integer numeroTemporada, DadosEpisodio dadosEpisodio) {
         this.temporada = numeroTemporada;
         this.titulo = dadosEpisodio.titulo();
